@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+cd ~/tools/env2pwn/
+docker compose exec pwn /bin/fish

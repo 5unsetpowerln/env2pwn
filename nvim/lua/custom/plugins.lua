@@ -86,9 +86,20 @@ local plugins = {
   {
     "kevinhwang91/nvim-hlslens",
   },
+  {
+    "Exafunction/codeium.vim",
+    event = "BufEnter",
+  },
   -- {
-  --   "Exafunction/codeium.vim",
-  --   event = "BufEnter",
+  --   "sainnhe/gruvbox-material",
+  --   lazy = false,
+  --   priority = 1000,
+  --   config = function()
+  --     -- Optionally configure and load the colorscheme
+  --     -- directly inside the plugin declaration.
+  --     vim.g.gruvbox_material_enable_italic = true
+  --     vim.cmd.colorscheme "gruvbox-material"
+  --   end,
   -- },
 
   -- To make a plugin not be loaded

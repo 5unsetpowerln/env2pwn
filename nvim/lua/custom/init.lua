@@ -14,7 +14,8 @@ vim.cmd [[
 ]]
 
 if vim.g.neovide then
-  vim.o.guifont = "M+1Code Nerd Font:h10:i"
+  vim.o.guifont = "ZedMono Nerd Font:h11"
+  -- vim.o.guifont = "M+1Code Nerd Font:h11:i"
   vim.g.neovide_padding_top = 0
   vim.g.neovide_padding_bottom = 0
   vim.g.neovide_padding_right = 0

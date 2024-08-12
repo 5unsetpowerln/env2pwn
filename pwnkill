@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cd ~/tools/env2pwn/
+docker compose kill pwn
+./manage_aslr.sh y
+

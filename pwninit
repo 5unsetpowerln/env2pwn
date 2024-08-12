@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+dir=$(pwd)
+
+cd ~/tools/env2pwn/
+
+cp ./templates/docker-compose.yml ./docker-compose.yml
+
+rm -rf ./programs
+cp -r $dir ./programs
+
+echo $dir
+sed -i s#LOCAL_DIR#$dir#g ./docker-compose.yml
+
+cp -r $HOME/.config/nvim ./
+cp $HOME/.ssh/id_ed25519.pub ./
+
+docker compose up -d --build
+
+./manage_aslr.sh n
+
+docker compose exec pwn /usr/bin/fish

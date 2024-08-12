@@ -1,1 +1,0 @@
-flag{f4ke_fl4g_str1ing}

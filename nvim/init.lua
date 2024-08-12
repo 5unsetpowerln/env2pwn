@@ -20,7 +20,7 @@ vim.opt.rtp:prepend(lazypath)
 require "plugins"
 
 -- move-nvim config
-require("move").setup()
+require("move")
 local opts = { noremap = true, silent = true }
 -- Normal-mode commands
 vim.keymap.set('n', '<A-j>', ':MoveLine(1)<CR>', opts)
